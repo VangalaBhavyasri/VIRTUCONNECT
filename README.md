@@ -12,9 +12,9 @@ It leverages on  **WebSocket** to enable seamless and instant messaging, making 
   
   ### Features
   **Instant Messaging:** Real-time chat functionality using WebSocket
-  
+
   **User Authentication:** Secure login and registration system
   
- **Scalability:** Efficient data handling with MongoDB
- 
-**Video Conferencing:**  video calling functionality
+  **Scalability:** Efficient data handling with MongoDB
+  
+  **Video Conferencing:**  video calling functionality
