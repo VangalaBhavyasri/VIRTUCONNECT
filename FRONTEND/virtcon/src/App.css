@@ -1,0 +1,90 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.landingPageContainer{
+  width: 100vw;
+  height: 100vh;
+  background: url("/backimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.landingPageContainer nav{
+  padding-inline: 1.2rem;
+  padding-block: 1.2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landingPageContainer nav h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.navlist{
+  display: flex;
+  gap:1.6rem;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.landingMainContent{
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3rem;
+  height:90vh;
+  align-items: center;
+}
+.contdiv{
+  font-size: 1.3rem;
+}
+.anc_div{
+  width: fit-content;
+  background-color:#FF9839 ;
+  padding: 0.7rem;
+  border-radius: 15px;
+  margin-top: 1.47rem;
+}
+.anc_link{
+  cursor: pointer;
+  text-decoration:none;
+  color: bisque;
+  font-weight: 500;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+
+}
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 40vw;
+  height: auto;
+  border-radius: 20px;
+}

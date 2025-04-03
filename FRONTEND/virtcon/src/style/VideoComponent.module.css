@@ -1,0 +1,247 @@
+ .meetVideoContainer{
+    position: relative;
+    height: 100vh;
+    background-color: rgb(235, 228, 218);
+   
+}
+.buttonContainer{
+    bottom:0;
+    position: fixed;
+    width:100vw;
+    text-align: center;
+    z-index: 2;
+}
+.buttonContainer svg{
+    font-size: 40px;
+}
+@media (max-width: 768px) {
+    .chatContainer {
+        width: 90%; /* Reduce width for smaller devices */
+    }
+}
+@media (max-width: 480px) {
+    .chattingArea {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sendButton {
+        width: 100%; /* Button takes full width */
+    }
+}
+.meetUserVideo {
+  position: absolute;
+  bottom: 10vh;
+  height: 30vh;
+  width: auto;
+  right: 0;
+  border-radius: 20px;
+}
+.ConferenceView {
+  display: flex;
+  flex-wrap: wrap; /* Wrap videos to the next row if space is insufficient */
+  justify-content: space-between; /* Even spacing between rows and columns */
+  gap: 10px; /* Spacing between each video */
+  padding: 10px;
+}
+.VideoWrapper {
+  flex: 1 1 calc(33.33% - 20px); /* Each video takes up one-third of the row */
+  max-width: calc(33.33% - 20px); /* Ensures no video exceeds one-third width */
+  min-width: 150px; /* Minimum size for small screens */
+  background-color: #000; /* Optional: Background for empty space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden; /* Ensures video doesn't overflow */
+}
+
+.VideoWrapper video {
+  width: 100%; /* Make video responsive */
+  height: auto;
+}
+.conferenceView  video {
+ width: 100%;
+ height: auto;
+}
+/* Responsiveness for medium devices */
+@media (max-width: 768px) {
+    .VideoWrapper {
+        flex: 1 1 calc(50% - 20px); /* Two videos per row for medium screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Responsiveness for small devices */
+@media (max-width: 480px) {
+    .VideoWrapper {
+        flex: 1 1 100%; /* One video per row for small screens */
+        max-width: 100%;
+    }
+}
+.chatRoom{
+    position: absolute;
+    right: 0;
+    height: 80vh;
+    width:25vw;
+    border-radius: 20px;
+    padding-inline: 20px;
+    margin-top: 40px;
+    background-color: #FEF9F2;
+    bottom: 7rem;
+    z-index: 2;
+}
+.chatContainer{
+    position: relative;
+    height: 100%;
+}
+.chattingArea{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    gap:0.5rem;
+}
+.chatInput {
+    flex: 1;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  /* Button styling */
+  .sendButton {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  @media (max-width: 992px) {
+    .chatContainer {
+      width: 50%; /* Reduce width to 50% on medium and smaller screens */
+    }
+    .chatInputContainer {
+      flex-direction: column; /* Stack input and button in a column */
+    }
+  
+    .chatInput {
+      width: 100%; /* Full width in column layout */
+      margin-bottom: 0.5rem; /* Add space between input and button */
+    }
+  
+    .sendButton {
+      width: 100%; /* Full width in column layout */
+    }
+  }
+  /* @media (max-width: 600px) {
+    .chatInput {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+  
+    .sendButton {
+      font-size: 0.9rem;
+      padding: 0.6rem 1rem;
+    }
+  } */
+.vidPrev >video{
+    /* position:relative;
+    margin-top: 10vh; */
+    height:300px;
+    width:500px;
+    border-radius:5%;
+    border: black solid 5px;
+    /* margin-left: 10%;
+    padding: 0; */
+}
+.userData{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-left: 8%;
+    margin-top: 25vh;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Chat input and button responsiveness */
+.chattingArea {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  }
+  
+  .chatInput {
+    flex: 1;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .sendButton {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Medium to small screen responsiveness */
+  @media (max-width: 992px) {
+    .chattingArea {
+      flex-direction: column; /* Stack button and input vertically */
+      gap: 0.5rem;
+      align-items: stretch; /* Ensure full-width alignment */
+      z-index: 2;
+    }
+  
+    .chatInput {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    .sendButton {
+      width: 100%; /* Full width for the button */
+    }
+  }
+  
+  /* Small screens */
+  @media (max-width: 600px) {
+    .chatInput {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+      padding: 0.6rem; /* Adjust padding */
+      width: 100%;
+    }
+  
+    .sendButton {
+      font-size: 0.9rem; /* Adjust button font size */
+      padding: 0.6rem 1rem; /* Adjust button padding */
+      width: 100%;
+    }
+  }
